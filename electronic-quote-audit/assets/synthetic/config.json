@@ -1,0 +1,109 @@
+{
+  "schema_version": "electronic-quote-audit-config-v1",
+  "config_version": "synthetic-example-v1",
+  "mapping_confirmed": true,
+  "as_of": "2026-10-24T00:00:00Z",
+  "date_timezone": "UTC",
+  "rounding": "exact",
+  "demand": {
+    "file": "procurement.csv",
+    "columns": {
+      "manufacturer": "制造商",
+      "mpn": "完整料号",
+      "internal_id": "客户内部号",
+      "quantity": "需求数",
+      "quantity_unit": "需求单位",
+      "required_receipt": "要求收货",
+      "notes": "采购备注"
+    }
+  },
+  "suppliers": [
+    {
+      "label": "合成供应商甲",
+      "file": "supplier-a.csv",
+      "columns": {
+        "manufacturer": "Maker",
+        "mpn": "Part",
+        "unit_price": "Rate",
+        "price_quantity": "PerQty",
+        "price_unit": "PerUnit",
+        "quantity_unit": "BuyUnit",
+        "moq": "MOQ",
+        "order_multiple": "Multiple",
+        "minimum_release": "MinRelease",
+        "package_quantity": "Package",
+        "tier_min": "From",
+        "tier_max": "Through",
+        "tier_basis": "TierBasis",
+        "currency": "Currency",
+        "tax_basis": "TaxBasis",
+        "freight": "Freight",
+        "freight_currency": "FreightCurrency",
+        "freight_scope": "FreightScope",
+        "valid_from": "ValidFrom",
+        "valid_until": "ValidUntil",
+        "valid_until_alternate": "OtherExpiry",
+        "stock": "Stock",
+        "distributor_receipt": "DistributorReceipt",
+        "manufacturer_lead_time": "MfrLead",
+        "customer_receipt": "CustomerReceipt",
+        "customer_receipt_alternate": "OtherCustomerReceipt",
+        "notes": "Notes",
+        "freight_tax_basis": "FreightTaxBasis"
+      }
+    },
+    {
+      "label": "合成供应商乙",
+      "file": "supplier-b.xlsx",
+      "sheet": "Quote",
+      "columns": {
+        "manufacturer": "乙_1_Maker",
+        "mpn": "乙_2_Part",
+        "unit_price": "乙_3_Rate",
+        "price_quantity": "乙_4_PerQty",
+        "price_unit": "乙_5_PerUnit",
+        "quantity_unit": "乙_6_BuyUnit",
+        "moq": "乙_7_MOQ",
+        "order_multiple": "乙_8_Multiple",
+        "minimum_release": "乙_9_MinRelease",
+        "package_quantity": "乙_10_Package",
+        "tier_min": "乙_11_From",
+        "tier_max": "乙_12_Through",
+        "tier_basis": "乙_13_TierBasis",
+        "currency": "乙_14_Currency",
+        "tax_basis": "乙_15_TaxBasis",
+        "freight": "乙_16_Freight",
+        "freight_currency": "乙_17_FreightCurrency",
+        "freight_scope": "乙_18_FreightScope",
+        "valid_from": "乙_19_ValidFrom",
+        "valid_until": "乙_20_ValidUntil",
+        "valid_until_alternate": "乙_21_OtherExpiry",
+        "stock": "乙_22_Stock",
+        "distributor_receipt": "乙_23_DistributorReceipt",
+        "manufacturer_lead_time": "乙_24_MfrLead",
+        "customer_receipt": "乙_25_CustomerReceipt",
+        "customer_receipt_alternate": "乙_26_OtherCustomerReceipt",
+        "notes": "乙_27_Notes",
+        "freight_tax_basis": "乙_28_FreightTaxBasis"
+      }
+    }
+  ],
+  "comparison": {
+    "currency": "CNY",
+    "tax_basis": "included_13pct",
+    "freight_basis": "goods_plus_freight"
+  },
+  "unit_conversions": [
+    {
+      "from": "reel",
+      "to": "pcs",
+      "factor": "2000",
+      "suppliers": [
+        "合成供应商乙"
+      ],
+      "customer_confirmed": true,
+      "version": "synthetic-reel-v1",
+      "source": "合成客户明确：该报价1reel=2000pcs，独立订购倍数2000pcs"
+    }
+  ]
+}
