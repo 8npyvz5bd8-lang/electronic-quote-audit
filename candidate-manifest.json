@@ -1,0 +1,59 @@
+{
+  "candidate": "v0.1.0-beta.1-candidate",
+  "published": false,
+  "license_status": "pending-publisher-decision",
+  "runtime": "Python 3.12+ standard library and system IANA timezone database",
+  "implementation_sha256": "40bda2613349e6bd001cbc7b528ac3a70c4a3469e598d11bb40c601182e6d35a",
+  "files": [
+    {
+      "path": "electronic-quote-audit/SKILL.md",
+      "bytes": 5518,
+      "sha256": "9eba74f90f41cac5b5527fbb02eeca5ce1490db7bef5ae5e5a23eef62e1c3b86"
+    },
+    {
+      "path": "electronic-quote-audit/agents/openai.yaml",
+      "bytes": 342,
+      "sha256": "211b51c02aae53199b20c3223e2aa5b622ea2300c47fec8c91690078c24a8196"
+    },
+    {
+      "path": "electronic-quote-audit/assets/synthetic/config.json",
+      "bytes": 3504,
+      "sha256": "1d6439db8d90c585022ed3d8a832718752b0222dea54c994bd10a906a814448e"
+    },
+    {
+      "path": "electronic-quote-audit/assets/synthetic/procurement.csv",
+      "bytes": 148,
+      "sha256": "0522c33b575a3f6e873e60c246a6f5e34082138a215f0028f0e0ca27c082109b"
+    },
+    {
+      "path": "electronic-quote-audit/assets/synthetic/supplier-a.csv",
+      "bytes": 906,
+      "sha256": "04ae2dbcb8aca03c85f7cf462fd8aec2575e92202faa812ff3deef4e333bfcc1"
+    },
+    {
+      "path": "electronic-quote-audit/assets/synthetic/supplier-b.xlsx",
+      "bytes": 2497,
+      "sha256": "68adb8c10ded942fc1d0a78b17da632cab2c1a1557e610d7b6fd2aa1aaa1f1ce"
+    },
+    {
+      "path": "electronic-quote-audit/references/schema.md",
+      "bytes": 11593,
+      "sha256": "4156051ab6b837176fe43f1ffc095bc0823f16d5bd3a4618e62a39501e21d00a"
+    },
+    {
+      "path": "electronic-quote-audit/references/sources.md",
+      "bytes": 1557,
+      "sha256": "b475189d311b7edda82ed5d39ebd587dab5d0db57fe09192ca9cf82d64e04763"
+    },
+    {
+      "path": "electronic-quote-audit/scripts/audit_quotes.py",
+      "bytes": 55007,
+      "sha256": "40bda2613349e6bd001cbc7b528ac3a70c4a3469e598d11bb40c601182e6d35a"
+    },
+    {
+      "path": "release-info.md",
+      "bytes": 2207,
+      "sha256": "ff23bf97aa2df20e6411147aa2eb38b5b9fbe307fce425b96999bf3296ced777"
+    }
+  ]
+}
