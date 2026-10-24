@@ -1,0 +1,4 @@
+interface:
+  display_name: "电子元件采购报价核对"
+  short_description: "离线核对电子元件报价、精确数量金额与原始证据，逐项生成待澄清清单"
+  default_prompt: "使用 $electronic-quote-audit 在本机按已确认列映射核对采购需求与2–5家报价，保留证据并逐项澄清未知条件。"
